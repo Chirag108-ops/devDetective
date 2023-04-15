@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="heading">
+            <h1>DevDetective</h1>
+            <button class="theme">
+                <p data-theme>Dark</p>
+                <img theme-img src="assets/images/moon-icon.svg">
+            </button>
+        </div>
+        
+        <div class="search">
+            <label for="input">
+                <img src="assets/images/search-icon.svg" height="20px" width="20px">
+            </label>
+            <form data-form autocomplete="off">
+                <input placeholder="Enter a Github username..." data-input id="input">
+                <button type="submit">
+                    Search
+                </button>
+            </form>
+        </div>
+
+        <div class="user-container">
+            <img profile-img>
+            <div class="side-container">
+                <div class="user-details">
+                    <div class="upper-container">
+                        <div class="header">
+                            <p data-name></p>
+                            <p data-date></p>
+                        </div>
+                        <a data-username target="_blank" rel="noopener noreferrer"></a>
+                    </div>
+                    <p data-bio></p>
+                    <div class="github-info">
+                        <div class="repo">
+                            <p>Repos</p>
+                            <p data-repo></p>
+                        </div>
+    
+                        <div class="followers">
+                            <p>Followers</p>
+                            <p data-followers></p>
+                        </div>
+    
+                        <div class="following">
+                            <p>Following</p>
+                            <p data-following></p>
+                        </div>
+                    </div>
+    
+                    <div class="links">
+                        <div class="city element">
+                            <img src="assets/images/location-icon.svg">
+                            <p data-city></p>
+                        </div>
+    
+                        <div class="website-link element">
+                            <img src="assets/images/website-icon.svg">
+                            <a data-website></a>
+                        </div>
+    
+                        <div class="twitter element">
+                            <img src="assets/images/twitter-icon.svg">
+                            <a data-twitter></a>
+                        </div>
+    
+                        <div class="company element">
+                            <img src="assets/images/company-icon.svg">
+                            <p data-company></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
